@@ -5,9 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Cyberleek GTA VI — Coming Soon</title>
+
   <meta
     name="description"
     content="Cyberleek GTA VI — Something big is coming."
+  >
+
+  <!-- Social preview -->
+  <meta property="og:title" content="Cyberleek GTA VI — Coming Soon">
+  <meta
+    property="og:description"
+    content="Something big is coming to Cyberleek GTA. Stay tuned."
+  >
+  <meta
+    property="og:url"
+    content="https://gta-6-two-omega.vercel.app"
+  >
+  <meta property="og:type" content="website">
+
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  >
+  <meta
+    name="twitter:title"
+    content="Cyberleek GTA VI — Coming Soon"
+  >
+  <meta
+    name="twitter:description"
+    content="Something big is coming to Cyberleek GTA."
   >
 
   <style>
@@ -34,10 +60,11 @@
       overflow-x: hidden;
       font-family: Arial, Helvetica, sans-serif;
       color: white;
+
       background:
         radial-gradient(
           circle at 50% 70%,
-          rgba(255, 60, 172, .2),
+          rgba(255,60,172,.2),
           transparent 35%
         ),
         linear-gradient(
@@ -61,11 +88,15 @@
 
     .sun {
       position: absolute;
-      width: min(58vw, 720px);
-      height: min(58vw, 720px);
+
+      width: min(58vw,720px);
+      height: min(58vw,720px);
+
       left: 50%;
       top: 53%;
-      transform: translate(-50%, -50%);
+
+      transform:
+        translate(-50%,-50%);
 
       border-radius: 50%;
 
@@ -75,64 +106,69 @@
           #ffe0a3 0%,
           #ff8cae 23%,
           #db419e 45%,
-          rgba(120, 30, 120, .15) 68%,
+          rgba(120,30,120,.15) 68%,
           transparent 72%
         );
 
-      filter: blur(1px);
       opacity: .8;
 
-      animation: sunPulse 5s ease-in-out infinite;
+      animation:
+        sunPulse 5s ease-in-out infinite;
     }
 
     .glow {
       position: absolute;
+
       width: 90vw;
       height: 90vw;
+
       left: 50%;
       top: 70%;
-      transform: translate(-50%, -50%);
+
+      transform:
+        translate(-50%,-50%);
 
       border-radius: 50%;
 
       background:
         radial-gradient(
           circle,
-          rgba(255, 60, 172, .28),
+          rgba(255,60,172,.28),
           transparent 65%
         );
 
       filter: blur(70px);
     }
 
-    /* Horizon */
-
     .horizon {
       position: absolute;
+
       left: 0;
       right: 0;
+
       bottom: 29%;
+
       height: 2px;
 
       background:
         linear-gradient(
           90deg,
           transparent,
-          rgba(255, 110, 205, .8),
+          rgba(255,110,205,.8),
           transparent
         );
 
       box-shadow:
-        0 0 20px rgba(255, 70, 190, .8),
-        0 0 60px rgba(255, 70, 190, .5);
+        0 0 20px rgba(255,70,190,.8),
+        0 0 60px rgba(255,70,190,.5);
     }
-
-    /* Retro grid */
 
     .grid {
       position: absolute;
+
       width: 180%;
       height: 60%;
+
       left: -40%;
       bottom: -10%;
 
@@ -142,12 +178,12 @@
 
       background-image:
         linear-gradient(
-          rgba(255, 80, 190, .23) 1px,
+          rgba(255,80,190,.23) 1px,
           transparent 1px
         ),
         linear-gradient(
           90deg,
-          rgba(255, 80, 190, .23) 1px,
+          rgba(255,80,190,.23) 1px,
           transparent 1px
         );
 
@@ -165,8 +201,6 @@
         gridMove 5s linear infinite;
     }
 
-    /* Scanlines */
-
     .scanlines {
       position: fixed;
       inset: 0;
@@ -180,13 +214,15 @@
       background:
         repeating-linear-gradient(
           to bottom,
-          transparent 0px,
+          transparent 0,
           transparent 3px,
           rgba(255,255,255,.15) 4px
         );
     }
 
-    /* Particles */
+    /* =========================
+       PARTICLES
+    ========================== */
 
     .particles {
       position: absolute;
@@ -288,7 +324,7 @@
       z-index: 5;
 
       padding:
-        40px 20px 110px;
+        40px 20px 120px;
 
       text-align: center;
     }
@@ -338,7 +374,7 @@
       position: relative;
 
       font-size:
-        clamp(80px, 17vw, 210px);
+        clamp(80px,17vw,210px);
 
       line-height: .72;
 
@@ -372,8 +408,6 @@
       letter-spacing: 7px;
 
       margin-bottom: 8px;
-
-      color: white;
 
       text-shadow:
         0 0 8px rgba(255,255,255,.8),
@@ -413,15 +447,11 @@
         rgba(255,50,180,.7);
     }
 
-    /* =========================
-       COMING SOON
-    ========================== */
-
     .coming {
       margin-top: 45px;
 
       font-size:
-        clamp(20px, 4vw, 42px);
+        clamp(20px,4vw,42px);
 
       font-weight: 900;
 
@@ -515,7 +545,7 @@
     }
 
     /* =========================
-       EMAIL FORM
+       EMAIL
     ========================== */
 
     .notify {
@@ -663,6 +693,8 @@
         blur(12px);
 
       transition: .3s;
+
+      cursor: pointer;
     }
 
     .button.primary {
@@ -690,21 +722,287 @@
     }
 
     /* =========================
+       SOCIAL SHARE
+    ========================== */
+
+    .share-section {
+      max-width: 650px;
+
+      margin:
+        55px auto 0;
+
+      padding:
+        25px 20px;
+
+      border:
+        1px solid
+        rgba(255,255,255,.13);
+
+      border-radius: 25px;
+
+      background:
+        rgba(0,0,0,.28);
+
+      backdrop-filter:
+        blur(18px);
+
+      box-shadow:
+        0 20px 60px
+        rgba(0,0,0,.25);
+    }
+
+    .share-title {
+      font-size: 20px;
+
+      font-weight: 900;
+
+      letter-spacing: 2px;
+
+      text-transform: uppercase;
+
+      margin-bottom: 7px;
+    }
+
+    .share-description {
+      font-size: 12px;
+
+      color:
+        rgba(255,255,255,.58);
+
+      margin-bottom: 20px;
+
+      line-height: 1.6;
+    }
+
+    .share-buttons {
+      display: flex;
+
+      justify-content: center;
+
+      gap: 10px;
+
+      flex-wrap: wrap;
+    }
+
+    .share-btn {
+      min-width: 105px;
+
+      padding:
+        12px 15px;
+
+      border-radius: 14px;
+
+      border:
+        1px solid
+        rgba(255,255,255,.12);
+
+      background:
+        rgba(255,255,255,.06);
+
+      color: white;
+
+      text-decoration: none;
+
+      font-size: 11px;
+
+      font-weight: 800;
+
+      cursor: pointer;
+
+      transition: .25s;
+
+      backdrop-filter:
+        blur(10px);
+    }
+
+    .share-btn:hover {
+      transform:
+        translateY(-3px);
+
+      background:
+        rgba(255,255,255,.12);
+
+      border-color:
+        rgba(255,60,172,.45);
+
+      box-shadow:
+        0 8px 25px
+        rgba(255,60,172,.2);
+    }
+
+    .discord:hover {
+      box-shadow:
+        0 8px 30px
+        rgba(88,101,242,.35);
+    }
+
+    .x:hover {
+      box-shadow:
+        0 8px 30px
+        rgba(255,255,255,.15);
+    }
+
+    .whatsapp:hover {
+      box-shadow:
+        0 8px 30px
+        rgba(37,211,102,.25);
+    }
+
+    .facebook:hover {
+      box-shadow:
+        0 8px 30px
+        rgba(24,119,242,.3);
+    }
+
+    /* =========================
+       SHARE MODAL
+    ========================== */
+
+    .modal {
+      position: fixed;
+
+      inset: 0;
+
+      z-index: 100;
+
+      display: none;
+
+      align-items: center;
+      justify-content: center;
+
+      padding: 20px;
+
+      background:
+        rgba(0,0,0,.72);
+
+      backdrop-filter:
+        blur(12px);
+    }
+
+    .modal.active {
+      display: flex;
+    }
+
+    .modal-box {
+      width: 100%;
+
+      max-width: 450px;
+
+      padding: 30px;
+
+      border:
+        1px solid
+        rgba(255,255,255,.15);
+
+      border-radius: 25px;
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(40,10,45,.95),
+          rgba(8,3,15,.96)
+        );
+
+      box-shadow:
+        0 30px 100px
+        rgba(0,0,0,.6);
+
+      text-align: center;
+
+      animation:
+        modalIn .3s ease;
+    }
+
+    .modal-box h2 {
+      margin-bottom: 10px;
+
+      font-size: 24px;
+    }
+
+    .modal-box p {
+      color:
+        rgba(255,255,255,.6);
+
+      font-size: 13px;
+
+      margin-bottom: 20px;
+    }
+
+    .share-link {
+      width: 100%;
+
+      padding: 13px;
+
+      border:
+        1px solid
+        rgba(255,255,255,.12);
+
+      border-radius: 12px;
+
+      background:
+        rgba(0,0,0,.35);
+
+      color:
+        rgba(255,255,255,.8);
+
+      outline: none;
+
+      margin-bottom: 12px;
+    }
+
+    .modal-buttons {
+      display: flex;
+
+      gap: 10px;
+    }
+
+    .modal-buttons button {
+      flex: 1;
+
+      padding: 13px;
+
+      border: 0;
+
+      border-radius: 12px;
+
+      cursor: pointer;
+
+      font-weight: 800;
+    }
+
+    .copy-button {
+      color: white;
+
+      background:
+        linear-gradient(
+          135deg,
+          #ff3cac,
+          #784ba0
+        );
+    }
+
+    .close-button {
+      color: white;
+
+      background:
+        rgba(255,255,255,.1);
+    }
+
+    /* =========================
        FOOTER
     ========================== */
 
     footer {
-      position: fixed;
+      position: relative;
 
       z-index: 10;
-
-      bottom: 18px;
-
-      left: 0;
 
       width: 100%;
 
       text-align: center;
+
+      padding:
+        25px 20px;
 
       font-size: 9px;
 
@@ -721,27 +1019,29 @@
     @keyframes heroIn {
       from {
         opacity: 0;
+
         transform:
           translateY(40px);
       }
 
       to {
         opacity: 1;
+
         transform:
           translateY(0);
       }
     }
 
     @keyframes sunPulse {
-      0%, 100% {
+      0%,100% {
         transform:
-          translate(-50%, -50%)
+          translate(-50%,-50%)
           scale(1);
       }
 
       50% {
         transform:
-          translate(-50%, -50%)
+          translate(-50%,-50%)
           scale(1.05);
       }
     }
@@ -770,11 +1070,29 @@
       }
     }
 
+    @keyframes modalIn {
+      from {
+        opacity: 0;
+
+        transform:
+          scale(.9)
+          translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+
+        transform:
+          scale(1)
+          translateY(0);
+      }
+    }
+
     /* =========================
        MOBILE
     ========================== */
 
-    @media (max-width: 600px) {
+    @media (max-width:600px) {
 
       header {
         padding: 20px;
@@ -842,12 +1160,16 @@
         min-height: 45px;
       }
 
-      footer {
-        position: relative;
+      .share-section {
+        margin-top: 40px;
+      }
 
-        margin-top: 20px;
+      .share-btn {
+        min-width: 125px;
+      }
 
-        padding-bottom: 15px;
+      .modal-buttons {
+        flex-direction: column;
       }
     }
   </style>
@@ -856,6 +1178,7 @@
 <body>
 
   <!-- BACKGROUND -->
+
   <div class="background">
 
     <div class="sun"></div>
@@ -877,6 +1200,7 @@
 
 
   <!-- HEADER -->
+
   <header>
 
     <div class="brand">
@@ -891,6 +1215,7 @@
 
 
   <!-- MAIN -->
+
   <main>
 
     <section class="hero">
@@ -900,7 +1225,6 @@
       </div>
 
 
-      <!-- TITLE -->
       <div class="title">
 
         <span class="cyber">
@@ -933,6 +1257,7 @@
 
 
       <!-- COUNTDOWN -->
+
       <div class="countdown">
 
         <div class="time">
@@ -959,6 +1284,7 @@
 
 
       <!-- EMAIL -->
+
       <form
         class="notify"
         id="notifyForm"
@@ -982,8 +1308,11 @@
       <div id="message"></div>
 
 
-      <!-- NAVIGATION BUTTONS -->
+      <!-- MAIN BUTTONS -->
+
       <div class="buttons">
+
+        <!-- NEW PAGE LINK -->
 
         <a
           class="button primary"
@@ -994,24 +1323,169 @@
 
         <a
           class="button"
-          href="#notify"
-          onclick="
-            document
-              .getElementById('email')
-              .focus();
-          "
+          href="#share"
         >
-          GET UPDATES
+          SHARE PAGE
         </a>
 
       </div>
+
+
+      <!-- SOCIAL SHARE -->
+
+      <section
+        class="share-section"
+        id="share"
+      >
+
+        <div class="share-title">
+          SHARE CYBERLEEK
+        </div>
+
+        <div class="share-description">
+          Tell your friends that something big
+          is coming. Share Cyberleek GTA VI
+          across your favorite platforms.
+        </div>
+
+
+        <div class="share-buttons">
+
+          <!-- Discord -->
+
+          <a
+            class="share-btn discord"
+            id="discordShare"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            DISCORD
+          </a>
+
+
+          <!-- X -->
+
+          <a
+            class="share-btn x"
+            id="xShare"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            X / TWITTER
+          </a>
+
+
+          <!-- Facebook -->
+
+          <a
+            class="share-btn facebook"
+            id="facebookShare"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            FACEBOOK
+          </a>
+
+
+          <!-- WhatsApp -->
+
+          <a
+            class="share-btn whatsapp"
+            id="whatsappShare"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            WHATSAPP
+          </a>
+
+
+          <!-- Native share -->
+
+          <button
+            class="share-btn"
+            id="nativeShare"
+            type="button"
+          >
+            MORE...
+          </button>
+
+
+          <!-- Copy -->
+
+          <button
+            class="share-btn"
+            id="copyShare"
+            type="button"
+          >
+            COPY LINK
+          </button>
+
+        </div>
+
+      </section>
 
     </section>
 
   </main>
 
 
+  <!-- SHARE MODAL -->
+
+  <div
+    class="modal"
+    id="shareModal"
+  >
+
+    <div class="modal-box">
+
+      <h2>
+        SHARE CYBERLEEK
+      </h2>
+
+      <p>
+        Copy the Cyberleek GTA page
+        and send it to your friends.
+      </p>
+
+      <input
+        class="share-link"
+        id="shareLink"
+        type="text"
+        readonly
+        value="https://gta-6-two-omega.vercel.app"
+      >
+
+      <div class="modal-buttons">
+
+        <button
+          class="copy-button"
+          id="modalCopy"
+          type="button"
+        >
+          COPY LINK
+        </button>
+
+        <button
+          class="close-button"
+          id="modalClose"
+          type="button"
+        >
+          CLOSE
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
   <!-- FOOTER -->
+
   <footer>
     CYBERLEEK GTA • FAN PROJECT •
     NOT AFFILIATED WITH ROCKSTAR GAMES
@@ -1021,13 +1495,19 @@
   <script>
 
     /* =========================
-       COUNTDOWN
+       SITE URL
     ========================== */
 
-    /*
-      Change this date whenever
-      you want to change the countdown.
-    */
+    const siteURL =
+      "https://gta-6-two-omega.vercel.app";
+
+    const shareText =
+      "Cyberleek GTA VI is coming soon. Check it out!";
+
+
+    /* =========================
+       COUNTDOWN
+    ========================== */
 
     const launchDate =
       new Date("2026-11-19T00:00:00");
@@ -1035,7 +1515,8 @@
 
     function updateCountdown() {
 
-      const now = new Date();
+      const now =
+        new Date();
 
       const difference =
         launchDate - now;
@@ -1094,28 +1575,28 @@
         .getElementById("days")
         .textContent =
           String(days)
-          .padStart(2, "0");
+          .padStart(2,"0");
 
 
       document
         .getElementById("hours")
         .textContent =
           String(hours)
-          .padStart(2, "0");
+          .padStart(2,"0");
 
 
       document
         .getElementById("minutes")
         .textContent =
           String(minutes)
-          .padStart(2, "0");
+          .padStart(2,"0");
 
 
       document
         .getElementById("seconds")
         .textContent =
           String(seconds)
-          .padStart(2, "0");
+          .padStart(2,"0");
     }
 
 
@@ -1137,7 +1618,11 @@
       );
 
 
-    for (let i = 0; i < 55; i++) {
+    for (
+      let i = 0;
+      i < 55;
+      i++
+    ) {
 
       const particle =
         document.createElement(
@@ -1219,12 +1704,242 @@
           message.textContent =
             "You're on the Cyberleek update list.";
 
-
           document
             .getElementById("email")
             .value = "";
         }
       );
+
+
+    /* =========================
+       SHARE URLS
+    ========================== */
+
+    const encodedURL =
+      encodeURIComponent(siteURL);
+
+    const encodedText =
+      encodeURIComponent(shareText);
+
+
+    /* Discord */
+
+    document
+      .getElementById("discordShare")
+      .href =
+        "https://discord.com/channels/@me";
+
+
+    /* X / Twitter */
+
+    document
+      .getElementById("xShare")
+      .href =
+        "https://twitter.com/intent/tweet?text="
+        + encodedText
+        + "&url="
+        + encodedURL;
+
+
+    /* Facebook */
+
+    document
+      .getElementById("facebookShare")
+      .href =
+        "https://www.facebook.com/sharer/sharer.php?u="
+        + encodedURL;
+
+
+    /* WhatsApp */
+
+    document
+      .getElementById("whatsappShare")
+      .href =
+        "https://api.whatsapp.com/send?text="
+        + encodedText
+        + "%20"
+        + encodedURL;
+
+
+    /* =========================
+       COPY LINK
+    ========================== */
+
+    async function copySiteLink() {
+
+      try {
+
+        await navigator.clipboard
+          .writeText(siteURL);
+
+        showMessage(
+          "Cyberleek link copied!"
+        );
+
+      } catch {
+
+        const input =
+          document.getElementById(
+            "shareLink"
+          );
+
+        input.select();
+
+        document.execCommand(
+          "copy"
+        );
+
+        showMessage(
+          "Cyberleek link copied!"
+        );
+      }
+    }
+
+
+    document
+      .getElementById("copyShare")
+      .addEventListener(
+        "click",
+        copySiteLink
+      );
+
+
+    /* =========================
+       NATIVE SHARE
+    ========================== */
+
+    document
+      .getElementById("nativeShare")
+      .addEventListener(
+        "click",
+        async function() {
+
+          if (
+            navigator.share
+          ) {
+
+            try {
+
+              await navigator.share({
+                title:
+                  "Cyberleek GTA VI",
+                text:
+                  shareText,
+                url:
+                  siteURL
+              });
+
+            } catch (error) {
+
+              if (
+                error.name !==
+                "AbortError"
+              ) {
+                openShareModal();
+              }
+
+            }
+
+          } else {
+
+            openShareModal();
+
+          }
+
+        }
+      );
+
+
+    /* =========================
+       MODAL
+    ========================== */
+
+    const modal =
+      document.getElementById(
+        "shareModal"
+      );
+
+
+    function openShareModal() {
+
+      modal.classList.add(
+        "active"
+      );
+
+    }
+
+
+    function closeShareModal() {
+
+      modal.classList.remove(
+        "active"
+      );
+
+    }
+
+
+    document
+      .getElementById("modalClose")
+      .addEventListener(
+        "click",
+        closeShareModal
+      );
+
+
+    document
+      .getElementById("modalCopy")
+      .addEventListener(
+        "click",
+        async function() {
+
+          await copySiteLink();
+
+          closeShareModal();
+
+        }
+      );
+
+
+    modal.addEventListener(
+      "click",
+      function(event) {
+
+        if (
+          event.target === modal
+        ) {
+
+          closeShareModal();
+
+        }
+
+      }
+    );
+
+
+    /* =========================
+       MESSAGE
+    ========================== */
+
+    function showMessage(text) {
+
+      const message =
+        document.getElementById(
+          "message"
+        );
+
+      message.textContent =
+        text;
+
+      setTimeout(
+        function() {
+
+          message.textContent =
+            "";
+
+        },
+        3000
+      );
+    }
 
   </script>
 
